@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>粉紅羊在韓國 | 個人作品集 & 商業合作</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Noto Sans TC -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cream: '#FFFBF7',
+              pink: '#FFB6C1',
+              'pink-dark': '#E88DA0',
+              yellow: '#FFE494',
+              blue: '#AEC6CF',
+              text: '#4A3E3D'
+            }
+          },
+          fontFamily: {
+            sans: ['"Noto Sans TC"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-cream text-brand-text font-sans antialiased selection:bg-brand-pink selection:text-white">
+
+  <!-- 導覽列 Navigation -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-brand-pink/20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 text-xl font-bold text-brand-pink-dark">
+        <span class="text-2xl">🐑</span> 粉紅羊在韓國
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#about" class="hover:text-brand-pink-dark transition">關於粉紅羊</a>
+        <a href="#portfolio" class="hover:text-brand-pink-dark transition">精選內容</a>
+        <a href="#services" class="hover:text-brand-pink-dark transition">合作方案</a>
+        <a href="#contact" class="px-4 py-2 bg-brand-pink hover:bg-brand-pink-dark text-white rounded-full transition shadow-sm">立即洽談</a>
+      </nav>
+      <!-- 手機端聯絡按鈕 -->
+      <a href="#contact" class="md:hidden px-3 py-1.5 bg-brand-pink text-white rounded-full text-xs font-medium">
+        合作洽談
+      </a>
+    </div>
+  </header>
+
+  <!-- 1. Hero Section -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div class="space-y-6 text-center md:text-left">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-pink/10 text-brand-pink-dark text-sm font-medium">
+        <span>🇹🇼 台中 ✕ 🇰🇷 牙山</span>
+        <span>•</span>
+        <span>旅韓台妻日常</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+        帶你挖掘韓國美食、<br class="hidden sm:block"/>
+        <span class="text-brand-pink-dark">可愛小物</span> 與 <span class="text-brand-pink-dark">輕旅行推薦</span>
+      </h1>
+      <p class="text-gray-600 leading-relaxed max-w-lg mx-auto md:mx-0">
+        嗨！我是粉紅羊 🐑！透過溫暖真實的視角，分享韓國在地第一手流行資訊、超商聯名開箱與私房景點，連結台灣與韓國的療癒美好生活。
+      </p>
+      
+      <!-- CTA 按鈕群 -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2">
+        <a href="#contact" class="px-8 py-3.5 bg-brand-pink hover:bg-brand-pink-dark text-white rounded-full font-bold shadow-md hover:shadow-lg transition text-center">
+          立即洽談合作
+        </a>
+        <a href="https://www.instagram.com/pinkyang89/" target="_blank" rel="noopener" class="px-8 py-3.5 border-2 border-brand-pink text-brand-pink-dark hover:bg-brand-pink/10 rounded-full font-bold transition flex items-center justify-center gap-2">
+          <i class="fa-brands font-bold fa-instagram text-lg"></i> 追蹤 IG 頻道
+        </a>
+      </div>
+
+      <!-- 快速數據標籤 -->
+      <div class="pt-6 border-t border-gray-200/60 grid grid-cols-3 gap-4 text-center md:text-left">
+        <div>
+          <p class="text-2xl font-bold text-brand-pink-dark">170+</p>
+          <p class="text-xs text-gray-500">IG 粉絲社群</p>
+        </div>
+        <div>
+          <p class="text-2xl font-bold text-brand-pink-dark">80+</p>
+          <p class="text-xs text-gray-500">質感主題貼文</p>
+        </div>
+        <div>
+          <p class="text-2xl font-bold text-brand-pink-dark">100%</p>
+          <p class="text-xs text-gray-500">真實生活互動</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 視覺照片卡片 -->
+    <div class="relative flex justify-center">
+      <div class="w-72 sm:w-80 md:w-96 h-[420px] bg-white p-4 rounded-3xl shadow-xl border-4 border-white rotate-2 hover:rotate-0 transition duration-300 relative">
+        <div class="w-full h-full bg-pink-100 rounded-2xl overflow-hidden relative flex flex-col justify-between p-6">
+          <div class="space-y-2">
+            <span class="bg-white/80 backdrop-blur-sm text-xs font-bold px-3 py-1 rounded-full text-brand-pink-dark inline-block">
+              #粉紅羊愛分享
+            </span>
+            <p class="text-xl font-bold text-gray-800">韓國 CU 超商/Olive Young 最新流行直擊！</p>
+          </div>
+          <div class="bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-sm text-xs space-y-1">
+            <p class="font-bold text-gray-700">💡 合作優勢：</p>
+            <p class="text-gray-600">受眾精準，鎖定喜愛韓國文化、美食與流行小物的女性族群。</p>
+          </div>
+        </div>
+      </div>
+      <!-- 裝飾性元素 -->
+      <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-brand-yellow rounded-full flex items-center justify-center text-2xl shadow-md -rotate-12">
+        🍦
+      </div>
+      <div class="absolute -top-4 -right-4 w-16 h-16 bg-brand-blue/30 rounded-full flex items-center justify-center text-2xl shadow-md rotate-12">
+        🇰🇷
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. About Me Section -->
+  <section id="about" class="bg-white py-16 md:py-24 border-y border-brand-pink/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-4">關於粉紅羊（pinkyang89）</h2>
+        <p class="text-gray-600 leading-relaxed">
+          立足天安牙山，將韓國第一手的生活美學、流行超商小物與私房美食，以親切接地氣的文字與視覺呈現給廣大台灣粉絲。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 bg-brand-cream rounded-2xl border border-brand-pink/20 hover:shadow-md transition">
+          <div class="w-12 h-12 bg-brand-pink/20 rounded-xl flex items-center justify-center text-brand-pink-dark text-xl font-bold mb-4">
+            🍜
+          </div>
+          <h3 class="text-lg font-bold mb-2">#粉紅羊愛美食</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            深入在地韓國餐廳、特色咖啡廳開箱，以及超商聯名冰品、飲料真實口感測評，打造高誘發購買欲的食記內容。
+          </p>
+        </div>
+
+        <div class="p-6 bg-brand-cream rounded-2xl border border-brand-pink/20 hover:shadow-md transition">
+          <div class="w-12 h-12 bg-brand-yellow/30 rounded-xl flex items-center justify-center text-brand-pink-dark text-xl font-bold mb-4">
+            🧸
+          </div>
+          <h3 class="text-lg font-bold mb-2">#粉紅羊愛分享</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            聚焦寶可夢、IP 聯名周邊、Olive Young 美妝與生活精選小物開箱，視覺可愛吸睛，社群互動率極佳。
+          </p>
+        </div>
+
+        <div class="p-6 bg-brand-cream rounded-2xl border border-brand-pink/20 hover:shadow-md transition">
+          <div class="w-12 h-12 bg-brand-blue/30 rounded-xl flex items-center justify-center text-brand-pink-dark text-xl font-bold mb-4">
+            ✈️
+          </div>
+          <h3 class="text-lg font-bold mb-2">#粉紅羊愛旅行</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            提供天安 K-Culture 博覽會、忠清南道及全羅道輕旅行指南，為品牌開拓旅遊與地方體驗型行銷可能性。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Featured Cases Section -->
+  <section id="portfolio" class="max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-24">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+      <div>
+        <span class="text-brand-pink-dark font-bold text-sm">PORTFOLIO</span>
+        <h2 class="text-2xl sm:text-3xl font-bold mt-1">精選貼文與成果案例</h2>
+      </div>
+      <a href="https://www.instagram.com/pinkyang89/" target="_blank" rel="noopener" class="text-sm text-brand-pink-dark font-bold hover:underline mt-2 md:mt-0 inline-flex items-center gap-1">
+        前往 IG 查看更多貼文 <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+
+    <!-- 模擬貼文展示格網 -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- 貼文卡片 1 -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition group">
+        <div class="h-64 bg-gray-100 flex items-center justify-center text-gray-400 group-hover:scale-105 transition duration-300 relative">
+          <span class="text-4xl">🍦</span>
+          <span class="absolute top-3 left-3 bg-brand-pink text-white text-xs px-2.5 py-1 rounded-full font-medium">美食/開箱</span>
+        </div>
+        <div class="p-5 space-y-3">
+          <h3 class="font-bold text-base text-gray-800 line-clamp-2">【CU 超商開箱】寶可夢熱門冰品真實評價！</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">
+            開箱韓國當地話題商品，貼文互動踴躍，成功吸引破千關注與留言詢問購入管道。
+          </p>
+          <div class="pt-3 border-t border-gray-100 flex items-center justify-between text-xs text-gray-400">
+            <span>#粉紅羊愛美食</span>
+            <span class="text-brand-pink-dark font-medium">高轉發案例</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 貼文卡片 2 -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition group">
+        <div class="h-64 bg-gray-100 flex items-center justify-center text-gray-400 group-hover:scale-105 transition duration-300 relative">
+          <span class="text-4xl">🎒</span>
+          <span class="absolute top-3 left-3 bg-brand-yellow text-gray-800 text-xs px-2.5 py-1 rounded-full font-medium">可愛小物</span>
+        </div>
+        <div class="p-5 space-y-3">
+          <h3 class="font-bold text-base text-gray-800 line-clamp-2">【Olive Young 必買】限定聯名美妝小物特輯</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">
+            精準鎖定赴韓旅遊與代購族群，圖文簡潔明瞭，極具商業導購潛力。
+          </p>
+          <div class="pt-3 border-t border-gray-100 flex items-center justify-between text-xs text-gray-400">
+            <span>#粉紅羊愛分享</span>
+            <span class="text-brand-pink-dark font-medium">高收藏案例</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 貼文卡片 3 -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition group">
+        <div class="h-64 bg-gray-100 flex items-center justify-center text-gray-400 group-hover:scale-105 transition duration-300 relative">
+          <span class="text-4xl">🏛️</span>
+          <span class="absolute top-3 left-3 bg-brand-blue text-white text-xs px-2.5 py-1 rounded-full font-medium">韓國輕旅</span>
+        </div>
+        <div class="p-5 space-y-3">
+          <h3 class="font-bold text-base text-gray-800 line-clamp-2">【天安景點】K-Culture 博覽會 3 天 2 夜直擊</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">
+            結合在地生活體驗與文化活動推廣，展現深度景點採訪與拍攝實力。
+          </p>
+          <div class="pt-3 border-t border-gray-100 flex items-center justify-between text-xs text-gray-400">
+            <span>#粉紅羊愛旅行</span>
+            <span class="text-brand-pink-dark font-medium">深度推廣</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Services Section -->
+  <section id="services" class="bg-white py-16 md:py-24 border-t border-brand-pink/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-brand-pink-dark font-bold text-sm">SERVICES</span>
+        <h2 class="text-2xl sm:text-3xl font-bold mt-1">商業合作服務項目</h2>
+        <p class="text-gray-600 text-sm mt-2">根據品牌需求提供彈性且高效的推廣解決方案</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- 方案 1 -->
+        <div class="border-2 border-brand-pink/20 rounded-3xl p-8 bg-brand-cream/50 relative flex flex-col justify-between hover:border-brand-pink transition">
+          <div class="space-y-4">
+            <h3 class="text-xl font-bold text-gray-800">IG 圖文 / 短影音開箱</h3>
+            <p class="text-xs text-gray-500 leading-relaxed">適合韓國在地美食、美妝、生活小物或伴手禮新品上市推廣。</p>
+            <ul class="space-y-2 text-sm text-gray-600 pt-2">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-pink-dark"></i> 高質感照片 / Reel 短影音拍攝</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-pink-dark"></i> 親切生活化文案撰寫</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-pink-dark"></i> 專屬 Hashtag 曝光</li>
+            </ul>
+          </div>
+          <a href="#contact" class="mt-8 block text-center py-2.5 bg-brand-pink hover:bg-brand-pink-dark text-white text-sm font-bold rounded-full transition">
+            洽談此方案
+          </a>
+        </div>
+
+        <!-- 方案 2 (熱門) -->
+        <div class="border-2 border-brand-pink bg-white rounded-3xl p-8 relative flex flex-col justify-between shadow-lg">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-pink text-white text-xs font-bold px-4 py-1 rounded-full">
+            熱門推薦
+          </div>
+          <div class="space-y-4">
+            <h3 class="text-xl font-bold text-gray-800">景點體驗 & 品牌採訪</h3>
+            <p class="text-xs text-gray-500 leading-relaxed">適合韓國地方旅遊局、飯店、體驗行程或特色實體門市採訪。</p>
+            <ul class="space-y-2 text-sm text-gray-600 pt-2">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-pink-dark"></i> 實地走訪拍攝與紀錄</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-pink-dark"></i> 多張多圖貼文 + Reels 展示</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-pink-dark"></i> 限時動態即時導流與連結</li>
+            </ul>
+          </div>
+          <a href="#contact" class="mt-8 block text-center py-2.5 bg-brand-pink hover:bg-brand-pink-dark text-white text-sm font-bold rounded-full transition">
+            洽談此方案
+          </a>
+        </div>
+
+        <!-- 方案 3 -->
+        <div class="border-2 border-brand-pink/20 rounded-3xl p-8 bg-brand-cream/50 relative flex flex-col justify-between hover:border-brand-pink transition">
+          <div class="space-y-4">
+            <h3 class="text-xl font-bold text-gray-800">長期品牌大使 / 開團</h3>
+            <p class="text-xs text-gray-500 leading-relaxed">適合高契合度的韓國生活風格品牌或優質產品長期合作。</p>
+            <ul class="space-y-2 text-sm text-gray-600 pt-2">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-pink-dark"></i> 定期限定曝光與開團</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-pink-dark"></i> 社群專屬優惠與導購</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-pink-dark"></i> 深度客製化專案策略</li>
+            </ul>
+          </div>
+          <a href="#contact" class="mt-8 block text-center py-2.5 bg-brand-pink hover:bg-brand-pink-dark text-white text-sm font-bold rounded-full transition">
+            洽談此方案
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Contact Section -->
+  <section id="contact" class="max-w-4xl mx-auto px-4 sm:px-6 py-16 md:py-24">
+    <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-brand-pink/20">
+      <div class="text-center max-w-xl mx-auto mb-8 space-y-2">
+        <h2 class="text-2xl sm:text-3xl font-bold">開啟商業合作</h2>
+        <p class="text-sm text-gray-600">
+          填寫下方表單或直接寄信至商務信箱，我將於 1-2 個工作天內回覆您！
+        </p>
+      </div>
+
+      <form action="#" method="POST" class="space-y-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xs font-bold text-gray-700 mb-2">您的姓名 / 單位名稱 *</label>
+            <input type="text" required placeholder="例如：王小明 / 品牌行銷部" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pink transition text-sm">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-700 mb-2">聯絡 Email *</label>
+            <input type="email" required placeholder="name@company.com" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pink transition text-sm">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xs font-bold text-gray-700 mb-2">合作類型 *</label>
+            <select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pink transition text-sm text-gray-600">
+              <option>IG 圖文 / 短影音開箱</option>
+              <option>景點體驗 & 品牌採訪</option>
+              <option>長期品牌大使 / 開團</option>
+              <option>其他客製化合作</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-700 mb-2">預計執行時間</label>
+            <input type="text" placeholder="例如：2026年10月中旬" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pink transition text-sm">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-700 mb-2">專案細節與合作需求 *</label>
+          <textarea rows="4" required placeholder="請簡述您的產品/服務、合作形式與目標..." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pink transition text-sm"></textarea>
+        </div>
+
+        <button type="submit" class="w-full py-4 bg-brand-pink hover:bg-brand-pink-dark text-white font-bold rounded-xl shadow-md hover:shadow-lg transition">
+          送出合作需求
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-100 py-8 text-center text-xs text-gray-400">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© 2026 粉紅羊在韓國 (pinkyang89). All rights reserved.</p>
+      <div class="flex items-center gap-4 text-base text-gray-500">
+        <a href="https://www.instagram.com/pinkyang89/" target="_blank" rel="noopener" class="hover:text-brand-pink-dark"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
